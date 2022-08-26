@@ -53,15 +53,17 @@ data['X'].fillna(Xmedian , inplace=True)
 data['Y'].fillna(Ymean, inplace=True)
 data['Z'].ffill(inplace=True)
 
-##print data
-#print(data)
+#print data
+print(data)
 ##describe
-#print(data.describe())
-#print(data.dtypes)
-#print(data.shape)
+print(data.describe())
+print(data.dtypes)
+print(data.shape)
 
 #remove outliner
 data = remove_outlier(data,'X','Y')
+
+
 
 
 
@@ -98,4 +100,4 @@ data = data.join(dataez)
 
 
 print(data)
-#plt.show()
+plt.show()
